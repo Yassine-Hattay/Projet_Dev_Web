@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="shortcut icon" href="assets/images/joystick.png"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Retro Games</title>
+  <meta name="title" content="./assets/images/retro_games">
+  <meta name="description" content="This is an esports and gaming html template made by codewithsadee">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&family=Work+Sans:wght@600&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/css/style_games.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-bg.png">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header active" data-header>
+    <div class="container">
+
+      <a href="index.html" class="logo">
+        <img src="./assets/images/retro_games2.png" width="110" height="53" alt="unigine home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link" data-nav-link>home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#games" class="navbar-link" data-nav-link>Games</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link" data-nav-link>contact</a>
+          </li>
+
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <div class="hero has-before" > 
+         <div class="searchBox" style="display: flex; align-items: center; margin-top: 40px;">         
+            <input type="search" id="search" placeholder="SEARCH" data-search>
+            <img src="assets/images/magnifying_glass.png" alt="My Image" width="40" height="30">
+                <i class="material-icons">    
+                </i>
+            </button>
+        </div>
+
+        </article>
+        <article>
+        <div class="games-card" data-user-cards-container></div>
+          <template data-user-template>
+            <div class="card" >
+              <div class="body" data-body></div>
+              <div class="header1" data-header1></div>
+            </div>
+          </template>
+    </article>
+  <article>
+    <section id="gameSection">
+      <iframe id="gameFrame" width="800" height="600"  frameborder="0"></iframe>
+    </section>
+  </article>
+
+  </main>
+
+
+  <footer class="footer">
+
+    <div class="section footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="index.html" class="logo">
+            <img src="./assets/images/retro_games2.png" width="110" height="53" alt="unigine home">
+          </a>
+
+          <p class="footer-text">
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Usefull Links</p>
+
+          <ul>
+
+            <li>
+              <a class="footer-link">Privacy and Policy</a>
+            </li>
+
+            <li>
+              <a class="footer-link">Terms of Use</a>
+            </li>
+
+            <li>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Contact Us</p>
+          <li>nasrisarra1222@gmail.com</li>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Signup</p>
+
+          <form action="./index.html" method="get" class="footer-form">
+            <input type="email" name="email_address" required placeholder="Your Email" autocomplete="off"
+              class="input-field">
+          </form>
+          <form action="./index.html" method="get" class="footer-form">
+            <input type="email" name="email_address" required placeholder="Your Password" autocomplete="off"
+              class="input-field">
+            <button type="submit" class="btn" data-btn>Subscribe Now</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+         
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - #CUSTOM CURSOR
+  -->
+
+  <div class="cursor" data-cursor></div>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script_games.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
